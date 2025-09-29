@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala - History</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#141414",
+            "background-light": "#f7f7f7",
+            "background-dark": "#191919",
+          },
+          fontFamily: {
+            "display": ["Times New Roman", "serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    [x-cloak] {
+      display: none !important;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<script defer="" src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between">
+<div class="flex-grow overflow-y-auto">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10 p-4">
+<div class="flex justify-between items-center">
+<div class="w-10"></div>
+<h1 class="text-xl font-bold text-primary dark:text-white text-center" style="font-family: 'Times New Roman', serif;">History</h1>
+<button class="text-primary dark:text-white">
+<span class="material-symbols-outlined">
+              calendar_today
+            </span>
+</button>
+</div>
+</header>
+<main class="p-4 space-y-4">
+<div class="bg-white dark:bg-primary/20 p-4 rounded-xl shadow-sm" x-data="{ open: true }">
+<div @click="open = !open" class="flex justify-between items-center cursor-pointer">
+<div>
+<p class="font-bold text-lg text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Today</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">2500 Cal, 120g P, 300g C, 80g F</p>
+</div>
+<span :class="open ? 'rotate-90' : ''" class="material-symbols-outlined text-primary/40 dark:text-white/40 transition-transform">
+              chevron_right
+            </span>
+</div>
+<div class="mt-4 space-y-4" x-cloak="" x-show="open" x-transition="">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDh6GdMNc8Be_OM1rNw7B99kycIYB1Jg5JEwO1fegI8e5TqatSktE9Eex8QG16iDGkBC6teXObvKXPjcOh5rTkFKWgpZmYfRmXwYPZZlMZ3DPNiHW47xcKoL1f7HNKdiGoNJqcTXl7QGWEWrLMPqvXR0B_dY5imxnNpIsYxf3FKKpvwE0cT10iiItN9kryJoabOphPIsF4gc1NoY4tor2d1Si_lO6tRDiBeldmdegkfU8sFGecpHrv5EIOQ6-Bcq2jAS1I8KSvZE7U");'></div>
+<div class="flex-1">
+<p class="font-bold text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Breakfast</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">800 Cal, 40g P, 100g C, 30g F</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbHR_NvB72y76wqy_1rb7oBnJykNpmARUM3DBhkfOBBqCBTmcayWu1pEG9GdRHm7_PdYnVbnRINBLkr2eYVl6J9Lijk2fFKJbPxSjlWxJe3h4UDoOFL5VtJJ0oaWgsmJgh2859nvddcLIQlYxt20eApjNOITC_oOVHcSbIEcxkAuXQhBVhpkzW1s0fMd46-Itt5iWqIuLWzxtx7mDRdLaq2jbv29UJbUg3oNF2hkSBqyBBzfHGHuYywtrne4QIHMOK45UTMpfaz88");'></div>
+<div class="flex-1">
+<p class="font-bold text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Lunch</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">1000 Cal, 50g P, 120g C, 30g F</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBilw_438JvegU5QlmBvgIQJ0oFJ4oi0TwXTpoxF_jISwbvYD3Soz5dm9LJMOGtkCbwYpFYkfTdWKYUD9vU9qIwbTbHvcc9t4tqxx_E1AxS5wXspUjdiQVWXZttWXVWoc3nxVgFaT-GBczAgypY8bmdscqQEKla0mDoWuaOuJZOH9qsAN-7ir1yhAokto1HtyvQN-eQjoKbaFcFFdV4a5oQ_w-ILf9R2UctfjpTWHxy4RCBRmasvn5wG_8GgtAlZcRF2zyYKLmC7gI");'></div>
+<div class="flex-1">
+<p class="font-bold text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Dinner</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">700 Cal, 30g P, 80g C, 20g F</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-primary/20 p-4 rounded-xl shadow-sm" x-data="{ open: false }">
+<div @click="open = !open" class="flex justify-between items-center cursor-pointer">
+<div>
+<p class="font-bold text-lg text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Yesterday</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">2200 Cal, 110g P, 280g C, 70g F</p>
+</div>
+<span :class="open ? 'rotate-90' : ''" class="material-symbols-outlined text-primary/40 dark:text-white/40 transition-transform">
+              chevron_right
+            </span>
+</div>
+<div class="mt-4 space-y-4" x-cloak="" x-show="open" x-transition="">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg bg-gray-200"></div>
+<div class="flex-1">
+<p class="font-bold text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Breakfast</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">700 Cal, 35g P, 90g C, 25g F</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg bg-gray-200"></div>
+<div class="flex-1">
+<p class="font-bold text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Lunch</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">800 Cal, 40g P, 110g C, 25g F</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-lg bg-gray-200"></div>
+<div class="flex-1">
+<p class="font-bold text-primary dark:text-white" style="font-family: 'Times New Roman', serif;">Dinner</p>
+<p class="text-sm text-primary/60 dark:text-white/60" style="font-family: 'Times New Roman', serif;">700 Cal, 35g P, 80g C, 20g F</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<nav class="bg-white dark:bg-primary/20 border-t border-primary/10 dark:border-white/10 px-4 pt-2 pb-4">
+<div class="flex justify-around items-center">
+<a class="flex flex-col items-center gap-1 text-primary/60 dark:text-white/60" href="#" style="font-family: 'Times New Roman', serif;">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-white" href="#" style="font-family: 'Times New Roman', serif;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="text-xs font-bold">History</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary/60 dark:text-white/60" href="#" style="font-family: 'Times New Roman', serif;">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

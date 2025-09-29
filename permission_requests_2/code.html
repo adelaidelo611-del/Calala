@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala - Permissions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#141414",
+            "background-light": "#f7f7f7",
+            "background-dark": "#191919",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Newsreader', serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-background-light font-display">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between p-4">
+<div class="w-10"></div>
+<h1 class="text-xl font-bold text-center flex-1">Calala</h1>
+<button class="w-10 h-10 flex items-center justify-center">
+<svg class="text-primary dark:text-background-light" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+</svg>
+</button>
+</header>
+<main class="flex-grow flex flex-col justify-center px-6">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-bold mb-2">Enable Permissions</h2>
+<p class="text-base text-primary/70 dark:text-background-light/70 max-w-sm mx-auto">To provide the best experience, Calala needs access to a few things.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4 p-4 rounded-lg bg-background-light dark:bg-primary/20">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 dark:bg-background-dark/50 flex items-center justify-center">
+<svg class="text-primary dark:text-background-light" fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-lg font-medium">Camera</h3>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Allows Calala to take photos of your meals for analysis.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-lg bg-background-light dark:bg-primary/20">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 dark:bg-background-dark/50 flex items-center justify-center">
+<svg class="text-primary dark:text-background-light" fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V158.75l-26.07-26.06a16,16,0,0,0-22.63,0l-20,20-44-44a16,16,0,0,0-22.62,0L40,149.37V56ZM40,172l52-52,80,80H40Zm176,28H194.63l-36-36,20-20L216,181.38V200ZM144,100a12,12,0,1,1,12,12A12,12,0,0,1,144,100Z"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-lg font-medium">Photos</h3>
+<p class="text-sm text-primary/70 dark:text-background-light/70">Allows Calala to access photos from your library for analysis.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="p-6">
+<button class="w-full h-14 bg-primary text-white dark:text-primary dark:bg-background-light rounded-xl font-bold text-lg">Continue</button>
+<div class="h-5"></div>
+</footer>
+</div>
+
+</body></html>

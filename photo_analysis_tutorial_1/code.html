@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between p-6">
+<header class="flex justify-end">
+<button class="text-primary/70 dark:text-white/70 text-sm font-medium">Skip</button>
+</header>
+<main class="flex flex-col items-center text-center">
+<div class="w-full aspect-[4/3] rounded-xl bg-center bg-cover mb-8" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOQVeu-kwKBHvHMYW3GP9l2mKmyywqs8h9lZOWPnJwTkawGY5gQlEpyvQy-KsJEYzcl1rczlVmPPKOUKe1spiZRdPwlAhwGe3jZIb-hxyiL2kP5-fw2yH24DBGH_I9HdJg9px6hWkK2szr83ZJM0TtsyTJBnY-zKJvypIkwPUQpzXYaD_iL8ZSbNjpx8G7iWqRu9ked2IdC6ixt6jz96GloPf2lt0A-ro1-UjO9BkyhoZmeBLlYb0eQ7ALGhErEcsae9HQsh86YkA");'>
+</div>
+<h1 class="text-3xl font-bold text-primary dark:text-white mb-3">Snap a pic of your food</h1>
+<p class="text-base text-primary/80 dark:text-white/80 max-w-xs">Our AI will analyze your meal and estimate its nutritional content.</p>
+</main>
+<footer class="flex flex-col items-center gap-6">
+<div class="flex space-x-2">
+<div class="w-2 h-2 rounded-full bg-primary dark:bg-white"></div>
+<div class="w-2 h-2 rounded-full bg-primary/20 dark:bg-white/20"></div>
+<div class="w-2 h-2 rounded-full bg-primary/20 dark:bg-white/20"></div>
+</div>
+<button class="w-full bg-primary text-white dark:text-primary dark:bg-white h-14 rounded-xl text-lg font-bold">
+                Next
+            </button>
+</footer>
+</div>
+
+</body></html>

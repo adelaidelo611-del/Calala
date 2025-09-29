@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala - Personalize Your Plan</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#141414",
+            "background-light": "#f7f7f7",
+            "background-dark": "#191919",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Newsreader', serif;
+    }
+    .form-select {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23757575' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5em 1.5em;
+      padding-right: 2.5rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+    .dark .form-select {
+       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23a3a3a3' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div class="flex items-center justify-between p-4 border-b border-primary/10 dark:border-primary/20">
+<div class="w-12"></div>
+<h1 class="text-xl font-bold text-primary dark:text-white text-center flex-1">Calala</h1>
+<button class="text-base font-bold text-primary dark:text-white w-12">Next</button>
+</div>
+</header>
+<main class="flex-grow px-4 py-6">
+<div class="max-w-md mx-auto">
+<h2 class="text-3xl font-bold text-primary dark:text-white mb-6">Personalize your plan</h2>
+<div class="space-y-4">
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Name" type="text"/>
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Weight (lbs)" type="number"/>
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Height (inches)" type="number"/>
+<div class="relative">
+<select class="form-select w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200">
+<option disabled="" selected="" value="">Activity Level</option>
+<option value="sedentary">Sedentary</option>
+<option value="light">Lightly Active</option>
+<option value="moderate">Moderately Active</option>
+<option value="very">Very Active</option>
+</select>
+</div>
+</div>
+<h2 class="text-3xl font-bold text-primary dark:text-white mt-10 mb-6">Set your goals</h2>
+<div class="space-y-4">
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Daily Calorie Goal" type="number"/>
+<div class="grid grid-cols-2 gap-4">
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Protein (g)" type="number"/>
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Carbs (g)" type="number"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Fat (g)" type="number"/>
+<input class="w-full bg-primary/5 dark:bg-primary/20 text-primary dark:text-white placeholder-primary/50 dark:placeholder-white/50 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/50 dark:focus:ring-white/50 transition duration-200" placeholder="Fiber (g)" type="number"/>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex justify-around p-2 border-t border-primary/10 dark:border-primary/20">
+<a class="flex flex-col items-center justify-center p-2 rounded-full text-primary dark:text-white" href="#">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path></svg>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-full text-primary/60 dark:text-white/60 hover:text-primary dark:hover:text-white transition-colors" href="#">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-full text-primary/60 dark:text-white/60 hover:text-primary dark:hover:text-white transition-colors" href="#">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Zm-32-80a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"></path></svg>
+</a>
+<a class="flex flex-col items-center justify-center p-2 rounded-full text-primary/60 dark:text-white/60 hover:text-primary dark:hover:text-white transition-colors" href="#">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala Welcome</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between p-8">
+<main class="flex flex-col items-center justify-center text-center flex-grow">
+<div class="w-24 h-24 mb-8">
+<svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<circle class="stroke-primary fill-none stroke-[4px]" cx="50" cy="50" r="48"></circle>
+<path class="stroke-primary fill-none stroke-[4px]" d="M 35 60 C 40 75, 60 75, 65 60" stroke-linecap="round"></path>
+<circle class="fill-primary" cx="38" cy="45" r="5"></circle>
+<circle class="fill-primary" cx="62" cy="45" r="5"></circle>
+</svg>
+</div>
+<h1 class="text-4xl font-bold text-primary dark:text-background-light mb-4">Welcome to Calala</h1>
+<p class="max-w-md text-lg text-primary/80 dark:text-background-light/80">
+                Snap a photo, track your meal. Calala uses smart food recognition to make calorie counting effortless. Start your journey to a healthier you today.
+            </p>
+</main>
+<footer class="w-full">
+<button class="w-full h-14 bg-primary text-background-light dark:text-white rounded-xl text-lg font-semibold hover:bg-primary/90 transition-colors">
+                Get Started
+            </button>
+</footer>
+</div>
+
+</body></html>

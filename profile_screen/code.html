@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala Profile</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#141414",
+            "background-light": "#f7f7f7",
+            "background-dark": "#191919",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Newsreader', serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-primary dark:text-background-light">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center justify-between p-4 border-b border-primary/10 dark:border-background-light/10">
+<div class="w-8"></div>
+<h1 class="text-xl font-bold text-center">Profile</h1>
+<button class="p-2">
+<svg class="text-primary dark:text-background-light" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="1"></circle>
+<circle cx="12" cy="5" r="1"></circle>
+<circle cx="12" cy="19" r="1"></circle>
+</svg>
+</button>
+</header>
+<main class="flex-grow p-4 space-y-8">
+<section class="flex flex-col items-center space-y-4">
+<div class="relative">
+<img alt="Sophia Carter's profile picture" class="w-28 h-28 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsDmPr-S-TfiYWfY_lHtcemXJy7ooFy28UfjcLSKR1ik7LTraWaOFOcYIfR-v-faNmzPgMouWNI9IKejymmULg8KQQQoWx92VgdeAlrWoTZdaf-6YpXEe0H0uMNbgMgU5lcXK86V_6jt-e3eal566OjfI__QGjro1zyPhdX2UlZLcO6BYgq60fQUkmPxlZUpBM-sziPsT3IujRcsTieGfJOY6YaRpTDz4qYEcSEi-WeWahQNWcvU8qG5tsyFH3d4LVPHTbnvmfvSA"/>
+<button class="absolute bottom-0 right-0 bg-primary text-background-light dark:bg-background-light dark:text-primary rounded-full p-1.5">
+<svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 20h9"></path>
+<path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+</svg>
+</button>
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold">Sophia Carter</h2>
+<p class="text-primary/60 dark:text-background-light/60">Joined 2023</p>
+</div>
+</section>
+<div class="space-y-6">
+<section class="bg-background-light dark:bg-primary/20 p-5 rounded-xl shadow-sm">
+<h3 class="font-bold text-lg mb-4">Personal Information</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<p class="text-primary/80 dark:text-background-light/80">Age</p>
+<p class="font-medium">25</p>
+</div>
+<div class="flex items-center justify-between">
+<p class="text-primary/80 dark:text-background-light/80">Height</p>
+<p class="font-medium">5'6"</p>
+</div>
+<div class="flex items-center justify-between">
+<p class="text-primary/80 dark:text-background-light/80">Weight</p>
+<p class="font-medium">130 lbs</p>
+</div>
+</div>
+</section>
+<section class="bg-background-light dark:bg-primary/20 p-5 rounded-xl shadow-sm">
+<h3 class="font-bold text-lg mb-4">Goals</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<p class="text-primary/80 dark:text-background-light/80">Daily Calories</p>
+<p class="font-medium">2000 kcal</p>
+</div>
+<div class="flex items-center justify-between">
+<p class="text-primary/80 dark:text-background-light/80">Macros</p>
+<p class="font-medium">100p / 50f / 250c</p>
+</div>
+</div>
+</section>
+<section class="bg-background-light dark:bg-primary/20 p-5 rounded-xl shadow-sm">
+<h3 class="font-bold text-lg mb-4">Settings</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<p>Notifications</p>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-primary/20 peer-focus:outline-none rounded-full peer dark:bg-background-dark peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<p>Units</p>
+<div class="flex items-center space-x-2">
+<span class="text-primary/60 dark:text-background-light/60">Imperial</span>
+<svg class="text-primary/60 dark:text-background-light/60" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<polyline points="9 18 15 12 9 6"></polyline>
+</svg>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-primary/10 dark:border-background-light/10">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center space-y-1 text-primary/60 dark:text-background-light/60" href="#">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-primary/60 dark:text-background-light/60" href="#">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+<path d="M3 3v5h5"></path>
+<path d="M12 7v5l4 2"></path>
+</svg>
+<span class="text-xs font-medium">History</span>
+</a>
+<a class="flex flex-col items-center space-y-1 text-primary dark:text-background-light" href="#">
+<svg class="text-primary dark:text-background-light" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88a9.947 9.947 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20z"></path>
+</svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

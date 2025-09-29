@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala - Meal Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="flex items-center p-4">
+<button class="text-primary dark:text-white">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold text-primary dark:text-white pr-8">Meal Details</h1>
+</header>
+<main class="px-4">
+<div class="mb-6 overflow-hidden rounded-xl">
+<img alt="Spaghetti and meatballs" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBWm4Eo0ODZif98wAQfmWqswb0TLGlAEp-ShuVo61krpZMRUynJJprW_JhqFDqbEULdZlouENto3JilzCSe_K4QHh9YI9wu3TVSlhph55d0iwL9Gm_22iE-ABwRRuSEkzF8eywr98-9nxEzIIBQsHj0T40-iddpOsTvdv5fMUnp32eMRDsvSaxqiRYmq8EPS8O67p7UEtaVxekrUjm6JGUySxkgcGbHpMIqWd4XAYGS9HOdMuhu8abD9O8F0pQPKJuuZkwD2e6UqU"/>
+</div>
+<div class="bg-white dark:bg-primary/10 p-6 rounded-xl space-y-4">
+<h2 class="text-2xl font-bold text-primary dark:text-white">Nutrition Facts</h2>
+<div class="space-y-4 pt-2">
+<div class="flex justify-between items-center text-lg">
+<span class="text-primary/70 dark:text-white/70">Calories</span>
+<span class="font-bold text-primary dark:text-white">450 kcal</span>
+</div>
+<hr class="border-background-light dark:border-white/10"/>
+<div class="flex justify-between items-center text-lg">
+<span class="text-primary/70 dark:text-white/70">Protein</span>
+<span class="font-bold text-primary dark:text-white">25g</span>
+</div>
+<hr class="border-background-light dark:border-white/10"/>
+<div class="flex justify-between items-center text-lg">
+<span class="text-primary/70 dark:text-white/70">Carbohydrates</span>
+<span class="font-bold text-primary dark:text-white">40g</span>
+</div>
+<hr class="border-background-light dark:border-white/10"/>
+<div class="flex justify-between items-center text-lg">
+<span class="text-primary/70 dark:text-white/70">Fats</span>
+<span class="font-bold text-primary dark:text-white">15g</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-primary/10 dark:border-white/10 mt-8">
+<nav class="flex justify-around items-center p-2">
+<a class="flex flex-col items-center gap-1 text-primary/60 dark:text-white/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary dark:text-white" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-xs font-bold">History</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary/60 dark:text-white/60" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Profile</span>
+</a>
+</nav>
+<div class="h-5"></div>
+</footer>
+</div>
+
+</body></html>

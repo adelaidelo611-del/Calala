@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calala - Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#141414",
+            "background-light": "#f7f7f7",
+            "background-dark": "#191919",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+        font-family: 'Newsreader', serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between p-6">
+<header class="flex justify-between items-center">
+<div class="w-8"></div>
+<h1 class="text-xl font-bold text-primary dark:text-white">Calala</h1>
+<button class="text-primary dark:text-white">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+</svg>
+</button>
+</header>
+<main class="flex flex-col items-center text-center">
+<div class="mb-8">
+<h2 class="text-4xl font-bold text-primary dark:text-white">You're all set!</h2>
+<p class="text-base text-primary/70 dark:text-white/70 mt-2">Start tracking your meals and achieving your health goals with Calala.</p>
+</div>
+<div class="w-full max-w-sm aspect-[2/3] rounded-xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFhNYv9CaFP-QIzsSJ3aef9Nuvo22Bp2eaxZt0PoK81ec9vKkrVusn4e9nEJRG0Pzi4tMBTfkZtq77FFp-g58JqkcbbbxEjY9O3fYhKkotgI31OE7S2bWXzu9S6zArGE_By_xwnooR8PuoJEz_vCnbO6h6JD25xn_Iv5kEmgmQ7Bq0Uax_WHRMaLe-kmgIJR8FvsKXYAZ4krZ_DzyU5aOqsx_iyQCoT9Ezzbi-L3nat133wE5zRPGOnFBeBClf9tLOmWsS9WZ5SyU");'></div>
+</div>
+</main>
+<footer class="w-full">
+<button class="w-full bg-primary text-white font-bold py-4 px-5 rounded-lg text-lg">
+        Start Tracking
+      </button>
+</footer>
+</div>
+
+</body></html>
